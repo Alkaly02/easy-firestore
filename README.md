@@ -15,7 +15,7 @@ yarn add easy-firestore
 ### Get all documents in a collection
 
 ```
-import {useDocs, useWhereDocs} from "easy-firestore/hooks"
+import {useDocs} from "easy-firestore/hooks"
 
 const {data, numberOfData, dataLoading} = useDocs(db, collectionName)
 ```
@@ -41,7 +41,7 @@ products.forEach(product => (
 ### Get all documents that matched to a condition in a collection
 
 ```
-import {useDocs, useWhereDocs} from "easy-firestore/hooks"
+import {useWhereDocs} from "easy-firestore/hooks"
 
 const {data, numberOfData, dataLoading} = useWhereDocs(db, collectionName, whereToLookInTheDocument, whereToLookValue)
 ```
