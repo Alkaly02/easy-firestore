@@ -41,6 +41,8 @@ products.map(product => (
 ### Get all documents that matched to a condition in a collection
 
 ```
+import {useDocs, useWhereDocs} from "easy-firestore/hooks"
+
 const {data, numberOfData, dataLoading} = useWhereDocs(db, collectionName, whereToLookInTheDocument, whereToLookValue)
 ```
 | Parameter | Type     | Description                |
