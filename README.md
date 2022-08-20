@@ -6,6 +6,8 @@ This package will help you in getting and adding data with firebase
 ### Get all documents in a collection
 
 ```
+import {useDocs, useWhereDocs} from "easy-firestore/hooks"
+
 const {data, numberOfData, dataLoading} = useDocs(db, collectionName)
 ```
 
