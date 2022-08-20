@@ -34,7 +34,7 @@ const {data, numberOfData, dataLoading} = useDocs(db, collectionName)
 ```
 const {data: products, numberOfData: numberOfProducts, dataLoading: productsLoading} = useDocs(db, "products")
 
-products.map(product => (
+products.forEach(product => (
   console.log(product.id)
 ))
 ```
@@ -59,6 +59,6 @@ const {data, numberOfData, dataLoading} = useWhereDocs(db, collectionName, where
 ```
 const {data: users, numberOfData: numberOfUsers, dataLoading: usersLoading} = useWhereDocs(db, "users", "city", "senegal")
 
-users.map(user => (
+users.forEach(user => (
   console.log(user.firstname)
 ))
