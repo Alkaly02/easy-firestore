@@ -1,4 +1,4 @@
-import { collection, onSnapshot } from "firebase/firestore";
+import { collection, onSnapshot, query, where } from "firebase/firestore";
 import { useEffect, useState } from "react";
 
 function useDocs(db, collectionName) {
@@ -33,10 +33,10 @@ const useWhereDocs = (
   const [data, setData] = useState([]);
   const [dataLoading, setDataLoading] = useState(true);
   const [numberOfData, setNumberOfData] = useState(0);
-  
+
   useEffect(() => {
     const getWhereDocs = async () => {
-      if (!whereToLook) return;
+      if (!whereToLookValue) return;
       const q = query(
         collection(db, collectionName),
         where(whereToLookInTheCollection, "==", whereToLookValue)
