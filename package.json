@@ -1,6 +1,6 @@
 {
   "name": "easy-firestore",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "description": "This package will help you in getting and adding data with firebase",
   "main": "index.js",
   "scripts": {

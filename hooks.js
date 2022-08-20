@@ -57,4 +57,4 @@ const useWhereDocs = (
   return { data, numberOfData, dataLoading };
 };
 
-module.exports = { useDocs, useWhereDocs };
+export { useDocs, useWhereDocs };
