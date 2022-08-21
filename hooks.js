@@ -61,7 +61,7 @@ const useWhereDocs = (
 };
 
 // get image url
-const useFile = (storage, file) => {
+const useImgUrl = (storage, file) => {
     const [percentage, setPercentage] = useState(null);
     const [imgUrl, setImgUrl] = useState('')
     useEffect(() => {
@@ -95,4 +95,4 @@ const useFile = (storage, file) => {
 }
 
 
-export { useDocs, useWhereDocs, useFile };
+export { useDocs, useWhereDocs, useImgUrl };

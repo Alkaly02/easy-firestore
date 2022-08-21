@@ -1,5 +1,5 @@
 # easy-firestore
-This package will help you in getting and adding data with firebase
+This package will help you in getting data and managing images with firebase. 
 
 ## Installation
 ```
@@ -62,3 +62,19 @@ const {data: users, numberOfData: numberOfUsers, dataLoading: usersLoading} = us
 users.forEach(user => (
   console.log(user.firstname)
 ))
+
+
+### Get the url image
+
+```
+import {useImgUrl} from "easy-firestore/hooks"
+
+const {imgUrl, setImgUrl, percentage} = useImgUrl(storage, file)
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `storage`      | | **Required**. Your firestore storage |
+| `file`| `object`| **Required**. The selected file from your pictures|
+| `imgUrl`| `string` | The url of your selected image that you can store on firestore then use it any where|
+| `percentage`| `number`| You can use this number to create a progressive bar|
