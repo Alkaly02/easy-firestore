@@ -62,6 +62,7 @@ const {data: users, numberOfData: numberOfUsers, dataLoading: usersLoading} = us
 users.forEach(user => (
   console.log(user.firstname)
 ))
+```
 
 
 ### Get the url image
